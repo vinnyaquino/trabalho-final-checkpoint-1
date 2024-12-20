@@ -10,20 +10,18 @@ private:
     char tipo;
     int capacidade;
     int velocidade;
-    int distanciaEntreDescansos;
-    int tempoDeDescanso;
-    int tempoDeDescansoAtual;
+    int distancia_entre_descansos;
+    int tempo_de_descanso;
     Cidade* localAtual;
+
 public:
     Transporte(std::string nome, char tipo, int capacidade, int velocidade,
-               int distanciaEntreDescansos, int tempoDeDescanso, Cidade* localAtual);
+               int distancia_entre_descansos, int tempo_de_descanso, Cidade* localAtual);
+
     std::string getNome();
     char getTipo();
     int getCapacidade();
     int getVelocidade();
-    int getDistanciaEntreDescansos();
-    int getTempoDeDescanso();
-    int getTempoDeDescansoAtual();
     Cidade* getLocalAtual();
     void setLocalAtual(Cidade* local);
 };
